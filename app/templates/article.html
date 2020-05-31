@@ -1,0 +1,9 @@
+{%for articles in articles%}
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+    <h1><a href="{{article.url}}">{{article.title}}</a></h1>
+    <h3>author: {{article.author}} source: {{article.source.name}}</h3>
+    <p>{{article.description}}</p>
+    <p>time of publishing {{ article.publishedAt}}</p>
+    <img src="{{article.urlToImage}}" alt="image of article" class="imag-response" style="height: 210px; width: 210px;">
+</div>
+{%endfor%}

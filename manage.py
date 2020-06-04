@@ -1,10 +1,10 @@
 from app import create_app
-from flask import Manager,Server
+from flask_script import Manager,Server
 
 #creating app instance
-app = creat_app('development')
+app = create_app('development')
 
-manager = manager(app)
+manager = Manager(app)
 
 manager.add_command('server',Server)
 @manager.command

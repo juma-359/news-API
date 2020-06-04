@@ -9,7 +9,10 @@ manager = Manager(app)
 manager.add_command('server',Server)
 @manager.command
 def test():
-    """run the unit tests"""
+    """
+    run the unit tests
+    """
+    
     import unittest
     test=unitnest.TestLoader().discover('tests')
     unittest.TextRunner(verbosity=2).run(tests)

@@ -2,7 +2,7 @@ import os
 
 class Config:
     BASE_URL_SOURCES = "https://newsapi.org/v2/sources?apiKey={}"
-    BASE_URL_ARTICLES = "https://newsapi.org/v2/top-headlines?sources={}&apiKey={}"
+    BASE_URL_ARTICLES = "https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey={}&apiKey={}"
     SECRET_KEY = os.environ.get('SECRET_KEY')
     NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
 
